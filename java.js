@@ -58,6 +58,8 @@ function cargarAnimaciones(){
 
     })
 }
+
+
 //Función para filtrar las categorías de los trabajos
 function verCategoria(cat){
     const items = document.getElementsByClassName("item");
@@ -124,6 +126,21 @@ function responsiveMenu(){
 }
 
 //Este codigo es para agregar una función a cada links del menu
+document.getElementById('downloadBtn').addEventListener('click', function() {
+    // Ruta del archivo que deseas descargar
+    const fileUrl = 'https://drive.google.com/file/d/1bry6xVfaXoHOoPIUPj_HpiRZ1qFYdxhq/view?usp=sharing'; // Cambia esta ruta por la URL de tu archivo
+    const fileName = 'mi_cv.pdf'; // Nombre con el que se descargará el archivo
+
+    // Crear un enlace temporal
+    const a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = fileName;
+
+    // Agregar el enlace al DOM, hacer clic en él y luego eliminarlo
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+})
 //responsive
 //cuando se presione en cualquier de los links del menu debe desaparecer el menu
 const links = document.querySelectorAll("#nav a");
