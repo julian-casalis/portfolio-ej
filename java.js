@@ -1,5 +1,5 @@
 //funciòn que carga las animaciones de las habilidades
-function cargarAnimaciones(){
+/*function cargarAnimaciones(){
     $(function(){
         $('.chart1').easyPieChart({
             size:160,
@@ -57,7 +57,10 @@ function cargarAnimaciones(){
         });
 
     })
-}
+    function sendEmail() {
+        window.location.href = `mailto:${emailAddress}`;
+    }
+}*/
 
 
 //Función para filtrar las categorías de los trabajos
@@ -83,7 +86,7 @@ function verCategoria(cat){
 }
 
 //Función que detecta cuando lanzar la animación de las habilidades
-function efectoHabilidades(){
+/*function efectoHabilidades(){
     var skills = document.getElementById("habilidades");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
     if(distancia_skills >= 300){
@@ -97,7 +100,7 @@ function efectoHabilidades(){
 
         cargarAnimaciones();
     }
-}
+}*/
 
 //detecto el scrolling para aplicar la animación de las habilidaes
 window.onscroll = function(){

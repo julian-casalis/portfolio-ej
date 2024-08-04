@@ -15,10 +15,11 @@ body{
 
 /* SECCION I N I C I O */
 .inicio{
-    background:linear-gradient(to right, #350067, #e500bf);
-    clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 84%, 0 45%);
-    height: 90vh;
+    background:linear-gradient(to right, #350067, #000000);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 60%, 0 50%);
+    height: 140vh;
     padding:  0 20px;
+    max-height: 1000px;
 }
 .inicio .contenido{
     max-width: 1100px;
@@ -35,7 +36,7 @@ body{
     display: flex;
     align-items: center;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 30px;
 }
 .inicio .logo i{
     display: inline-block;
@@ -51,10 +52,12 @@ body{
 }
 #inicio header nav a:hover{
     border-bottom: 2px solid #ff5b00;
+
 }
 .inicio .redes a{
     text-decoration: none;
     color: #fff;
+    font-size: 30px;
     display: inline-block;
     margin: 0 10px;
 }
@@ -112,16 +115,22 @@ body{
     background-color: #3e3e3e;
 }
 .sombra{
-    filter:drop-shadow(0em 30px 20px #310021);
+    filter:drop-shadow(0em 20px 10px #1a0022);
 }
-/* SECCION S E R V I C I O S */
+/* SECCION S E R V I C I O S 
 .servicios{
+    
     max-width: 1100px;
     margin: auto;
     padding: 0 20px;
     position: relative;
     top: -170px;
     z-index: 10;
+}
+
+.servicios h2{
+    text-align: center;
+    color: whitesmoke;
 }
 .servicios .fila{
     display: flex;
@@ -185,63 +194,25 @@ body{
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-}
-/* seccion HABILIDADES */
-.habilidades{
-    background:linear-gradient(to right,  #350067, #e500bf);
-    color: #fff;
-    padding: 60px 0;
-    position: relative;
-    top: -100px;
-}
-.habilidades h2{
-    text-align: center;
-}
-.habilidades .contenedor-habi{
-    max-width: 1100px;
-    margin: auto;
-}
-.habilidades .fila{
-    display: flex;
-    justify-content: space-around;
-}
-.score{
-    padding: 10px;
-    margin: auto 0;
-}
-.score .box{
-    width: 100%;
-}
-.score .box h2{
-    display: block;
-    text-align: center;
-}
-.score .box .chart{
-    position: relative;
-    width: 160px;
-    height: 160px;
-    margin: auto;
-    line-height: 160px;
-    font-size: 40px;
-    text-align: center;
-}
+}*/
 
-/* Esta clase se genera dinámicamente por la librera para graficos */
-.score .box canvas{
-    position:absolute;
-    top: 0;
-    left: 0;
-}
 /* SECCION T R A B A J O S */
 .trabajos{
+    
     max-width: 1100px;
     margin: auto;
     padding: 0 20px;
+    margin-top: -310px;
 }
 .trabajos h2{
+    margin-bottom: 40px;
     text-align: center;
+
+    color: white;
 }
-.trabajos nav{
+
+
+/*.trabajos nav{
     text-align: center;
     margin: 30px 0;
 }
@@ -249,14 +220,14 @@ body{
     text-decoration: none;
     display: inline-block;
     margin: 0 20px;
-    color: #007be5;
+    color: #cee8ff;
     font-weight: bold;
     padding: 3px 10px;
     border: 3px solid transparent;
 }
 .trabajos nav a:hover{
     border: 3px solid #ff5b00;
-}
+}*/
 /* Esta clase se agregrá dinámicamente cuando haya seleccionada una opción */
 .borde{
     border: 3px solid #ff5b00 !important;  
@@ -290,8 +261,9 @@ body{
     transition: .3s;
 }
 .trabajos .galeria .item .info h3{
-    color: #000;
-    margin-bottom: 20px;
+    color: #ffffff;
+    background:  #3a3a3a ;
+    margin-bottom: 12px;
 }
 .trabajos .galeria .item .info span{
     color: #8d8d8d;
@@ -302,18 +274,86 @@ body{
 }
 .trabajos .galeria .item .info a{
     display: block;
-    margin: 20px;
+    margin: 30px;
     text-decoration: none;
-    color: #007be5;
+    color: #000000;
     font-weight: bold;
+    background:linear-gradient(to right, #f3dacc, #ff9900);
+    transition: .5s;
+    cursor: pointer;
 }
 .trabajos .galeria .item:hover .info{
     opacity: 1;
     top: 0;
 }
+
+/* seccion HABILIDADES */
+.habilidades{
+    background:linear-gradient(to right,  #350067, #000000);
+    color: #fff;
+    padding: 60px 0;
+    position: static;
+   margin-top: 100px;
+}
+.habilidades h2{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.habilidades .contenedor-habi{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    padding: 10px;
+    margin: auto 0;
+}
+.score .box{
+    width: 10%;
+}
+.habi{
+    width: 100px;
+    height: auto;
+    border: transparent;
+}
+.h3{
+ margin-top: 10px;
+margin-left: 30px;
+ font-size: 16px;
+ color: white;
+}
+.h33{
+    margin-top: 10px;
+   
+     font-size: 16px;
+     color: white;
+ }
+.score .box h2{
+    display: block;
+    text-align: center;
+}
+/*.score .box .chart{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    line-height: 160px;
+    font-size: 40px;
+    text-align: center;
+}*/
+
+/* Esta clase se genera dinámicamente por la librera para graficos */
+.score .box canvas{
+    position:absolute;
+    top: 0;
+    left: 0;
+}
 /* SECCIÓN C O N T A C T O */
 .contacto{
-    background: linear-gradient(to right,  #350067, #e500bf);
+    background: linear-gradient(to right,  #0f001d,#000000) ;
         /* url(img/foto-contacto.png);*/ 
         background-size: cover;
         color: #fff;
@@ -340,14 +380,14 @@ body{
     padding-left: 8px;
 }
 .contacto .contenedor-contacto .info p{
-    color: #8d8d8d;
+    color: #ebebeb;
 }
 .contacto input, .contacto textarea{
     width: 100%;
     border: none;
     background-color: transparent;
     padding: 10px;
-    border: 1px solid #8d8d8d ;
+    border: 1px solid #cccccc ;
     margin-bottom: 20px;
     outline: none;
     color: #ff5b00;
@@ -403,7 +443,7 @@ footer{
 }
 
 /* SECCION RESPONSIVE */
-@media screen and (max-width:1180px){
+@media screen and (max-width:800px){
     .inicio{
         clip-path: none;
     }
@@ -469,10 +509,10 @@ footer{
     .servicios .fila .col .card{
         margin-bottom: 20px;
     }
+
     .habilidades{
         position: static;
     }
-
     .trabajos nav a{
         margin: 0 5px;
     }
