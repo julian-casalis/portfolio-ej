@@ -513,6 +513,9 @@ footer{
     .habilidades{
         position: static;
     }
+       .trabajos{
+        margin-top: 95px;
+    }
     .trabajos nav a{
         margin: 0 5px;
     }
