@@ -131,7 +131,7 @@ function responsiveMenu(){
 //Este codigo es para agregar una función a cada links del menu
 document.getElementById('downloadBtn').addEventListener('click', function() {
     // Ruta del archivo que deseas descargar
-    const fileUrl = 'https://drive.google.com/file/d/1bry6xVfaXoHOoPIUPj_HpiRZ1qFYdxhq/view?usp=sharing'; // Cambia esta ruta por la URL de tu archivo
+    const fileUrl = 'https://drive.google.com/file/d/110ipMzkSUr0E-A8v_4ujA7GVWwEs6MmG/view?usp=sharing'; // Cambia esta ruta por la URL de tu archivo
     const fileName = 'mi_cv.pdf'; // Nombre con el que se descargará el archivo
 
     // Crear un enlace temporal
