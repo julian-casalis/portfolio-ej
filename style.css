@@ -247,6 +247,7 @@
        .trabajos{
     max-width: 1100px;
         margin: 80px auto;
+        margin-top: 20px;
     padding: 0 20px;
     position: relative;
     z-index: 10;
@@ -554,6 +555,7 @@
                 margin-top: 50px;
             }
         }
+
 
 
 
