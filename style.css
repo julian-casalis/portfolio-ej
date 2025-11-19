@@ -200,7 +200,7 @@
             max-width: 1100px;
             margin: auto;
             padding: 80px 20px;
-            margin-top: -200px;
+            margin-top: -150px;
             color: var(--color-text);
         }
         .servicios h2{
@@ -247,7 +247,7 @@
        .trabajos{
     max-width: 1100px;
         margin: 80px auto;
-        margin-top: 20px;
+        margin-top: 15px;
     padding: 0 20px;
     position: relative;
     z-index: 10;
@@ -555,6 +555,7 @@
                 margin-top: 50px;
             }
         }
+
 
 
 
