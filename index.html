@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Portfolio - Julián Casalis</title>
 </head>
 
 <body>
     <a href="https://wa.me/543482211640" class="btn-wsp" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-    <!-- Secciòn INICIO -->
+    
+    <!-- INICIO -->
     <span class="sombra">
         <section id="inicio" class="inicio">
             <div class="contenido">
@@ -25,352 +25,336 @@
                         <i class="fa-solid fa-user-tie"></i>
                         <h1>Portfolio</h1>
                     </div>
-                      <nav id="nav" class="">
+                    <nav id="nav">
                         <a href="#inicio">Inicio</a>
-                        <!--<a href="#servicios">Servicios</a>-->
+                        <a href="#servicios">Servicios</a>
                         <a href="#trabajos">Proyectos</a>
                         <a href="#habilidades">Habilidades</a>
                         <a href="#contacto">Contacto</a>
                     </nav>
-    
-                    <!-- Icono del menu responsive -->
-
                     <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
-    
                     <div class="redes">
                         <a href="https://github.com/julian-casalis"><i class="fa-brands fa-github"></i></a>
-                         <a href="mailto:escjuliancasalis@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="mailto:escjuliancasalis@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </header>
                 
                 <div class="fila">
                     <div class="col">
-                        <h2> 👋 Hola, soy Julián Casalis</h2>
-                        <p> Desarrolador de Software.</p>
-                        <p>Un apasionado del desarrollo de software y 
-                            estudiante de segundo año de Tecnico Superior en Desarrollo de Software. Hasta ahora,
-                             he adquirido conocimientos en diversas asignaturas y me he dedicado
-                              al desarrollo web, tanto en frontend como en backend. Manejo tecnologías 
-                              como HTML, CSS y JavaScript, y he trabajado con frameworks y bases de datos..</p>
-                            <button  class="btn-1" id="downloadBtn" >Descargar CV</button>
-                     
+                        <div class="contenedor-img">
+                            <img src="https://ui-avatars.com/api/?name=Julian+Casalis&background=ff5b00&color=fff&size=400&bold=true" alt="Julián Casalis">
+                        </div>
+                    </div>
+                    <div class="col text-col">
+                        <h2>👋 Hola, soy Julián Casalis</h2>
+                        <p class="profesion">Desarrollador de Software | Community Manager | Marketing Digital</p>
+                        <p>Ayudo a personas y empresas a mejorar su presencia digital y crear soluciones web simples y efectivas. Me apasiona transformar ideas en proyectos reales que generen impacto.</p>
+                        <div class="botones-accion">
+                            <button class="btn-1" id="downloadBtn">
+                                <i class="fa-solid fa-download"></i> Descargar CV
+                            </button>
+                            <a href="#contacto" class="btn-2">
+                                <i class="fa-solid fa-paper-plane"></i> Contactar
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </span>
 
-    <!-- sección SERVICIOS -->
-
-    <!--<section id="servicios" class="servicios">
-        <h2>Servicios</h2>
-        <div class="fila">
-            <div class="col">
-                <div class="card">
-                    <div class="icono color1">
-                        <div class="circulo">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                        </div>
-                    </div>
-                    <h3>Diseño Web</h3>
-                    <p>Tengo una base sólida en diseño Web, lenguajes como HTML, CSS y un poco de JS. Esto es lo que más practico fuera de mis estudios. Puedo decir que en esto soy bastante bueno.
-                        </p>
-
-                 <a href="#">Leer Más</a>
+    <!-- SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <h2><i class="fa-solid fa-briefcase"></i> ¿Qué puedo ofrecerte?</h2>
+        
+        <div class="categoria">
+            <h3><i class="fa-solid fa-code"></i> Desarrollo Web</h3>
+            <div class="lista-servicios">
+                <div class="servicio-item">
+                    <i class="fa-solid fa-laptop-code"></i> Desarrollo web (HTML, CSS, JS, PHP, Java, Node)
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="icono color2">
-                        <div class="circulo">
-                            <i class="fa-solid fa-palette"></i>
-                        </div>
-                    </div>
-                    <h3>Diseño Gráfico</h3>
-                    <p>Se utilizar herramientas de diseño gráfico como Adobe Photoshop CC y Canva. También cuento con un curso de ello.</p>
-
-                    <a href="#">Leer Más</a>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-database"></i> CRUD / Paneles administrativos
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="icono color3">
-                        <div class="circulo">
-                            <i class="fa-brands fa-uncharted"></i>
-                        </div>
-                    </div>
-                    <h3>Desarrollador De Software. </h3>
-                    <p>En mi carrera estamos utilizando Programación Orientada a Objetos, Base de Datos, entre otras cosas.</p>
-
-                   <a href="#">Leer Más</a>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-rocket"></i> Landing pages & portfolios
+                </div>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-plug"></i> Integraciones con API
+                </div>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-gauge-high"></i> Optimización de rendimiento
                 </div>
             </div>
         </div>
-      <div class="fila">
-            <div class="col">
-                <div class="card">
-                    <div class="icono color1">
-                        <div class="circulo">
-                            <i class="fa-solid fa-bullhorn"></i>
-                        </div>
-                    </div>
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
 
-                    <a href="#">Leer Más</a>
+        <div class="categoria">
+            <h3><i class="fa-solid fa-users"></i> Community Manager</h3>
+            <div class="lista-servicios">
+                <div class="servicio-item">
+                    <i class="fa-brands fa-instagram"></i> Gestión de redes (IG, FB, TikTok)
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="icono color2">
-                        <div class="circulo">
-                            <i class="fa-solid fa-circle-info"></i>
-                        </div>
-                    </div>
-                    <h3>Soporte Clientes</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
-
-                    <a href="#">Leer Más</a>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-calendar-days"></i> Calendario de contenido
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="icono color3">
-                        <div class="circulo">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                    <h3>Tiendas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
-
-                    <a href="#">Leer Más</a>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-comments"></i> Respuesta a mensajes
+                </div>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-video"></i> Creación de reels y contenido
+                </div>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-chart-line"></i> Reportes mensuales
                 </div>
             </div>
         </div>
-    </section>-->
 
-
-    <!-- sección proyectos -->
-
-   <section class="trabajos" id="trabajos">
-     <h2>
-        <i class="fa-solid fa-star"></i>
-        Proyectos 
-
-     </h2>
-
-        <!-- <nav>
-       <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Diseño</a>
-        <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Programación</a>
-      --  <a href="javascript:void(0)" class="" id="animaciones" onclick="verCategoria('animaciones')">Animaciones</a> -
-        <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
-     </nav>-->
-
-     <div class="galeria">
-
-       <div class="item disenio">
-            <img src="img/pagina.png" alt="">
-            <div class="info">
-                <h3>Página para tienda de Ropa, con carrito</h3>
-                <h4></h4>
-                <span>html</span><span>css</span><span>javascript</span>
-           <a href="https://julian-casalis.github.io/proyect-page/" >
-                <i class="fa-solid fa-link"></i>
-                Ver Trabajo </a>
+        <div class="categoria">
+            <h3><i class="fa-solid fa-bullhorn"></i> Marketing Digital</h3>
+            <div class="lista-servicios">
+                <div class="servicio-item">
+                    <i class="fa-solid fa-rectangle-ad"></i> Campañas de anuncios (Meta Ads / Google Ads)
+                </div>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-magnifying-glass"></i> SEO básico
+                </div>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-filter"></i> Embudos de venta
+                </div>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-envelope-open-text"></i> Email marketing
+                </div>
+                <div class="servicio-item">
+                    <i class="fa-solid fa-chart-simple"></i> Análisis de métricas
+                </div>
             </div>
         </div>
+    </section>
 
-       <div class="item disenio">
-            <img src="img/login.png" alt="">
-            <div class="info">
-                <h3>Login y Register</h3>
-                <h4></h4>
-                <span>html</span><span>css</span><span>javascript</span>
-                <a href="https://julian-casalis.github.io/login/" >
-                    <i class="fa-solid fa-link"></i>
-                    Ver Trabajo </a> 
-            </div>
-        </div>
-       <div class="item disenio">
-            <img src="img/info.png" alt="">
-            <div class="info">
-                <h3>Pagina para brindar información</h3>
-                <span>html</span><span>css</span><span>javascript</span>
-                <a href="https://julian-casalis.github.io/informativa/" >
-                    <i class="fa-solid fa-link"></i>
-                    Ver Trabajo </a> 
-            </div>
+    <!-- PROYECTOS -->
+    <section class="trabajos" id="trabajos">
+        <h2><i class="fa-solid fa-star"></i> Proyectos Destacados</h2>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-filter="todos">Todos</button>
+            <button class="tab-btn" data-filter="desarrollo">💻 Desarrollo</button>
+            <button class="tab-btn" data-filter="community">📱 Community Manager</button>
+            <button class="tab-btn" data-filter="marketing">📈 Marketing</button>
         </div>
 
-      <div class="item programacion">
-            <img src="img/catalogo2.png" alt="">
-            <div class="info">
-                <h3>Catalogo compra y venta </h3>
-                <span>html</span><span>css</span><span>javascript</span>
-                <a href="#" >
-                    <i class="fa-solid fa-link"></i>
-                    Ver Trabajo </a> 
+        <div class="galeria">
+            <!-- PROYECTOS DE DESARROLLO -->
+            <div class="item desarrollo">
+                <img src="img/pagina.png" alt="Tienda Online">
+                <div class="info">
+                    <h3>Tienda de Ropa Online</h3>
+                    <p class="descripcion">E-commerce completo con carrito de compras, filtros y pasarela de pago.</p>
+                    <p class="rol">🎯 Mi rol: Desarrollador Full Stack</p>
+                    <div class="tecnologias">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="resultado">
+                        <i class="fa-solid fa-check"></i> Optimización del tiempo de carga en 60%
+                    </div>
+                    <a href="https://julian-casalis.github.io/proyect-page/" target="_blank">
+                        <i class="fa-solid fa-link"></i> Ver Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="item desarrollo">
+                <img src="img/login.png" alt="Sistema Login">
+                <div class="info">
+                    <h3>Sistema de Login & Register</h3>
+                    <p class="descripcion">Sistema de autenticación seguro con validaciones en frontend y backend.</p>
+                    <p class="rol">🎯 Mi rol: Desarrollador Frontend</p>
+                    <div class="tecnologias">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="resultado">
+                        <i class="fa-solid fa-check"></i> 100% de validaciones implementadas
+                    </div>
+                    <a href="https://julian-casalis.github.io/login/" target="_blank">
+                        <i class="fa-solid fa-link"></i> Ver Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="item desarrollo">
+                <img src="img/info.png" alt="Web Informativa">
+                <div class="info">
+                    <h3>Sitio Web Informativo</h3>
+                    <p class="descripcion">Landing page moderna con diseño responsive y animaciones suaves.</p>
+                    <p class="rol">🎯 Mi rol: Diseñador & Desarrollador Web</p>
+                    <div class="tecnologias">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="resultado">
+                        <i class="fa-solid fa-check"></i> 98/100 en Google PageSpeed
+                    </div>
+                    <a href="https://julian-casalis.github.io/informativa/" target="_blank">
+                        <i class="fa-solid fa-link"></i> Ver Demo
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROYECTOS DE COMMUNITY MANAGER -->
+            <div class="item community">
+                <img src="img/catalogo2.png" alt="Estrategia Redes">
+                <div class="info">
+                    <h3>Estrategia de Contenido - Marca Local</h3>
+                    <p class="descripcion">Gestión completa de redes sociales con contenido diario y engagement.</p>
+                    <p class="rol">🎯 Mi rol: Community Manager</p>
+                    <div class="tecnologias">
+                        <span>Instagram</span><span>Facebook</span><span>Canva</span>
+                    </div>
+                    <div class="resultado">
+                        <i class="fa-solid fa-check"></i> +40% alcance orgánico en 2 meses
+                    </div>
+                    <a href="#contacto">
+                        <i class="fa-solid fa-envelope"></i> Solicitar info
+                    </a>
+                </div>
+            </div>
+
+            <div class="item community">
+                <img src="img/tiendaP.png" alt="Reels Virales">
+                <div class="info">
+                    <h3>Creación de Reels Virales</h3>
+                    <p class="descripcion">Producción de contenido audiovisual con alta tasa de interacción.</p>
+                    <p class="rol">🎯 Mi rol: Creador de Contenido</p>
+                    <div class="tecnologias">
+                        <span>CapCut</span><span>Canva</span><span>TikTok</span>
+                    </div>
+                    <div class="resultado">
+                        <i class="fa-solid fa-check"></i> +100K reproducciones acumuladas
+                    </div>
+                    <a href="#contacto">
+                        <i class="fa-solid fa-envelope"></i> Solicitar info
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROYECTOS DE MARKETING -->
+            <div class="item marketing">
+                <img src="img/catalogo2.png" alt="Campaña Ads">
+                <div class="info">
+                    <h3>Campaña Meta Ads - E-commerce</h3>
+                    <p class="descripcion">Estrategia de anuncios pagos enfocada en conversión y ROI.</p>
+                    <p class="rol">🎯 Mi rol: Especialista en Ads</p>
+                    <div class="tecnologias">
+                        <span>Meta Ads</span><span>Analytics</span><span>Pixel</span>
+                    </div>
+                    <div class="resultado">
+                        <i class="fa-solid fa-check"></i> ROI de 3.5x en 30 días
+                    </div>
+                    <a href="#contacto">
+                        <i class="fa-solid fa-envelope"></i> Solicitar info
+                    </a>
+                </div>
+            </div>
+
+            <div class="item marketing">
+                <img src="img/tiendaP.png" alt="SEO Local">
+                <div class="info">
+                    <h3>Optimización SEO Local</h3>
+                    <p class="descripcion">Posicionamiento en Google para negocio local en zona específica.</p>
+                    <p class="rol">🎯 Mi rol: Consultor SEO</p>
+                    <div class="tecnologias">
+                        <span>SEO</span><span>Google My Business</span><span>Analytics</span>
+                    </div>
+                    <div class="resultado">
+                        <i class="fa-solid fa-check"></i> Primera página de Google en 60 días
+                    </div>
+                    <a href="#contacto">
+                        <i class="fa-solid fa-envelope"></i> Solicitar info
+                    </a>
+                </div>
             </div>
         </div>
+    </section>
 
-         <div class="item programacion">
-            <img src="img/tiendaP.png" alt="">
-            <div class="info">
-                <h3>Diseñada para compra y venta</h3>
-                <span>html</span><span>css</span><span>javascript</span>
-                <a href="#" >
-                    <i class="fa-solid fa-link"></i>
-                    Ver Trabajo </a> 
-            </div>
-        </div>
-       <!--
-        <div class="item programacion">
-            <img src="pagina3.png" alt="">
-            <div class="info">
-                <h3>Contactos</h3>
-                <span>html</span><span>css</span><span>javascript</span>
-                <a href="#" >
-                    <i class="fa-solid fa-link"></i>
-                    Ver Trabajo </a> 
-            </div>
-        </div>
-
-           - <div class="item animaciones">
-
-            <img src="pagina3.png" alt="">
-            <div class="info">
-                <h3>Titulo</h3>
-                <span>html</span><span>css</span><span>javascript</span>
-                -<a href="#">Ver Trabajo</a>
-            </div>
-        </div>-->
-
-         <!---<div class="item animaciones">
-            <img src="img/trabajo5.png" alt="">
-            <div class="info">
-                <h3>Titulo11 </h3>
-                <span>html</span><span>css</span><span>javascript</span>
-            <a href="#">Ver Trabajo</a>
-            </div>
-        </div>-->
-
-    <!--- <div class="item animaciones">
-            <img src="img/trabajo9.png" alt="">
-            <div class="info">
-                <h3>Titulo22 </h3>
-                <span>html</span><span>css</span><span>javascript</span>
-                <a href="#">Ver Trabajo</a>
-            </div>
-        </div>-->
-    </div>
-</section>
-
-
-    <!-- sección habilidades -->
-
+    <!-- HABILIDADES -->
     <section class="habilidades" id="habilidades">
         <div class="contenedor-habi">
-            <h2>Habilidades</h2>
+            <h2><i class="fa-solid fa-code"></i> Habilidades Técnicas</h2>
             <div class="fila">
-                <div class="col">
-                    <div class="score">
-                        <div class="box">
-                            <img src="img/html-icon.svg" alt="" class="habi">
-                           <!--- <div class="chart" data-percent="85">
-                                85%}
-
-                                ""ejemplo de % de  habilidades""
-                            </div>-->
-                            <h3 class="h3" >HTML</h3>
-                        </div>
+                <div class="score">
+                    <div class="box">
+                        <img src="img/html-icon.svg" alt="HTML">
+                        <h3>HTML</h3>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="score">
-                        <div class="box">
-                          <img src="img/css-icon.svg" alt="" class="habi">
-                            <h3 class="h3">CSS </h3>
-                        </div>
+                <div class="score">
+                    <div class="box">
+                        <img src="img/css-icon.svg" alt="CSS">
+                        <h3>CSS</h3>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="score">
-                        <div class="box">
-                            <img src="img/descarga.svg" alt="" class="habi">
-                            <h3 class="h33">JAVASCRIPT</h3>
-                        </div>
+                <div class="score">
+                    <div class="box">
+                        <img src="img/descarga.svg" alt="JavaScript">
+                        <h3>JavaScript</h3>
                     </div>
                 </div>
-            </div>
-            <div class="fila">
-                <div class="col">
-                    <div class="score">
-                        <div class="box">
-                            <img src="img/mysql-icon.svg" alt="" class="habi">
-                            <h3 class="h3">MYSQL</h3>
-                        </div>
+                <div class="score">
+                    <div class="box">
+                        <img src="img/mysql-icon.svg" alt="MySQL">
+                        <h3>MySQL</h3>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="score">
-                        <div class="box">
-                            <img src="img/java-icon.svg" alt="" class="habi">
-                            <h3 class="h3">JAVA</h3>
-                        </div>
+                <div class="score">
+                    <div class="box">
+                        <img src="img/java-icon.svg" alt="Java">
+                        <h3>Java</h3>
                     </div>
                 </div>
-               <!--- <div class="col">
-                    <div class="score">
-                        <div class="box">
-                            
-                            <h2>GitHub</h2>
-                        </div>
-                    </div>
-                </div>-->
             </div>
         </div>
     </section>
 
-    <!-- sección contacto -->
-
-<!--todavia no es funcional-->
+    <!-- CONTACTO -->
     <section class="contacto" id="contacto">
-
         <div class="contenedor-contacto">
-            <h2>Contacto</h2>
-
-            <div class="fila" >
-                <div class="col">
-                   
-                    <div class="info">
-                        <h3>Email:</h3>
-                        <p>escjuliancasalis@gmail.com</p>
-                    </div>
-                    <div class="info">
-                        <h3>    </h3>
-                        <p>      </p>
-                    </div>
-                    <div class="info">
-                        <a class="btn" href="https://github.com/julian-casalis" >  GitHub</a>
-                    </div>
+            <h2><i class="fa-solid fa-paper-plane"></i> Contacto</h2>
+            
+            <div class="fila">
+                <div class="info-contacto">
+                    <h3><i class="fa-solid fa-envelope"></i> Email</h3>
+                    <a href="mailto:escjuliancasalis@gmail.com">escjuliancasalis@gmail.com</a>
                 </div>
-               <div class="col">
 
-                   <!--- <input type="text" placeholder="Nombre...">
-                    <input type="text" placeholder="Correo...">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <input type="submit" value="Enviar" class="btn">-->
+                <div class="info-contacto">
+                    <h3><i class="fa-brands fa-whatsapp"></i> WhatsApp</h3>
+                    <a href="https://wa.me/543482211640" target="_blank">+54 3482 211640</a>
+                </div>
+
+                <div class="info-contacto">
+                    <h3><i class="fa-solid fa-share-nodes"></i> Redes Sociales</h3>
+                    <div class="redes-contacto">
+                        <a href="https://github.com/julian-casalis" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>Creado por Julián Casalis Desarrollador de Software</p>
+        <p>© 2024 Julián Casalis - Desarrollador de Software | Todos los derechos reservados</p>
     </footer>
+
     <script src="java.js"></script>
 </body>
 </html>
